@@ -14,8 +14,6 @@ using namespace std;
 
 short longestCommonSubstring(string s1, string s2) {
 	short dp[1001][1001];
-
-
 }
 
 int main() {

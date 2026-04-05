@@ -11,7 +11,7 @@ int maxEnvelopes(vector<vector<int>> &envelopes) {
     if (n == 0) return 0;
 
 	// First sort the envelopes increasingly by width, and for equals widths - decreasingly by height
-	// That optimises the later search in the dp algorithm
+	// That optimizes the later search in the dp algorithm
     sort(envelopes.begin(), envelopes.end(), [](const vector<int>& a, const vector<int>& b) {
 		// Equal widhts => first the greater height
         if (a[0] == b[0]) return a[1] > b[1];
